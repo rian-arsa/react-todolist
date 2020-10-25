@@ -10,7 +10,7 @@ const todos = [
     text: "Belajar Bersama pak dika"
   },
   {
-    text: "Belajar"
+    text: "Belajar Halo"
   },
   {
     text: "Belajar"
