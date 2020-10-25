@@ -14,8 +14,8 @@ const TodoForm = ({ addTodo }) => {
       return;
     }
 
-    alert(value);
-    setValue = "";
+    addTodo(value);
+    setValue("");
   };
 
   return (
