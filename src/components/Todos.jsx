@@ -3,11 +3,19 @@ import PropTypes from "prop-types";
 
 import Todo from "./Todo";
 
-const Todos = ({ todos }) => {
+const Todos = ({ todos, CompleteTodo }) => {
   return (
     <section className="container-todos">
       {todos.map((todo, index) => {
-        return <Todo key={index} text={todo.text} />;
+        return (
+          <Todo
+            key={index}
+            text={todo.text}
+            isCompleted={todo.isCompleted}
+            CompleteTodo={CompleteTodo}
+            index={index}
+          />
+        );
       })}
     </section>
   );
@@ -18,7 +26,8 @@ Todos.propTypes = {
     PropTypes.shape({
       text: PropTypes.string
     })
-  )
+  ),
+  CompleteTodo: PropTypes.func.isRequired
 };
 
 export default Todos;
