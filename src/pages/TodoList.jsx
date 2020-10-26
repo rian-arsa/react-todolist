@@ -13,8 +13,11 @@ const TodoList = () => {
   const [showAdd, setShowAdd] = useState(false);
 
   const addTodo = (value) => {
+    if (todos.length >= 10) {
+      alert("Maksimal 10");
+      return;
+    }
     const addedTodo = [...todos, { text: value }];
-
     setTodos(addedTodo);
   };
 
@@ -26,7 +29,6 @@ const TodoList = () => {
   };
 
   const showAddToggle = () => setShowAdd(!showAdd);
-
 
   return (
     <Paper>
