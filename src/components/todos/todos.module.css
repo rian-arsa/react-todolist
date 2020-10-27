@@ -1,0 +1,17 @@
+.containerTodos {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.todoPlaceholderText {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  text-align: center;
+  padding: 19px;
+}
+
+.addButtonPlaceholderText {
+  font-size: 24px;
+  font-family: "Bungee", cursive;
+}

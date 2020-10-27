@@ -1,0 +1,12 @@
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.headerTitle {
+  font-size: 3.6rem;
+  font-family: "Homemade Apple", cursive;
+  text-transform: lowercase;
+}
