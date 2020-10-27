@@ -1,0 +1,19 @@
+.headerBtn {
+  font-size: 1.8rem;
+  font-family: "Bungee", cursive;
+  padding: 16px;
+  background: unset;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+}
+
+.headerTitle {
+  font-size: 3.6rem;
+  font-family: "Homemade Apple", cursive;
+  text-transform: lowercase;
+}
+
+.clear {
+  color: red;
+}
