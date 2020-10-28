@@ -1,16 +1,22 @@
+/** @jsx jsx */
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
+import {jsx} from "@emotion/core";
 
-import styles from "./button.module.css";
+// import styles from "./button.module.css";
+import * as styles from "./button.styles";
 
 const Button = ({ text, onClick, color }) => {
-  const classNames = cx(styles.headerBtn, {
-    [styles.clear]: color === "red"
-  });
+  // const classNames = cx(styles.headerBtn, {
+  //   [styles.clear]: color === "red"
+  // });
 
   return (
-    <button className={classNames} onClick={onClick}>
+    // <button className={classNames} onClick={onClick}>
+    //   {text}
+    // </button>
+    <button css={styles.button({color})} onClick={onClick}>
       {text}
     </button>
   );
